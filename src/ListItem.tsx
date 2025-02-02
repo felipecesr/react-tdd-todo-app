@@ -11,7 +11,10 @@ const ListItem: FC<ListItemProps> = ({ children, isCompleted, ...props }) => (
     className={`list-item ${isCompleted ? "list-item--done" : ""}`}
     {...props}
   >
-    <span className='list-item__label'>{children}</span>
+    <label>
+      <input type="checkbox" />
+      <span className='list-item__label'>{children}</span>
+    </label>
   </li>
 );
 

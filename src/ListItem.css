@@ -28,6 +28,10 @@
   animation: strikeitem .3s ease-out 0s forwards;
 }
 
+.list-item input {
+  appearance: none;
+}
+
 @keyframes strikeitem {
 	to { width:calc(100% + 1rem); }
 }
