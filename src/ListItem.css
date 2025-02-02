@@ -1,0 +1,33 @@
+.list-item {
+  display: flex;
+  margin: 0 -3rem 4px;
+  padding: 1.1rem 3rem;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.list-item__label {
+  position: relative;
+  transition: opacity .2s linear;
+}
+
+.list-item--done .list-item__label {
+  opacity: .6;
+}
+
+.list-item--done .list-item__label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -.5rem;
+  display: block;
+  width: 0%;
+  height: 1px;
+  background: #FFF;
+  animation: strikeitem .3s ease-out 0s forwards;
+}
+
+@keyframes strikeitem {
+	to { width:calc(100% + 1rem); }
+}
