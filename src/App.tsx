@@ -1,12 +1,12 @@
-import { useState } from 'react'
-import './App.css'
-import Button from './Button';
-import ListItem from './ListItem';
+import { useState } from "react";
+import "./App.css";
+import Button from "./Button";
+import ListItem from "./ListItem";
 
 type Todo = {
   text: string;
   completed: boolean;
-}
+};
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
@@ -30,10 +30,10 @@ function App() {
   };
 
   return (
-    <div className='wrapper'>
-      <h1 className='heading'>Tasks</h1>
+    <div className="wrapper">
+      <h1 className="heading">Tasks</h1>
       <input
-        className='input'
+        className="input"
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}
@@ -41,7 +41,7 @@ function App() {
       />
       <Button onClick={addTodo}>Add</Button>
       <Button onClick={clearCompleted}>Clear Completed</Button>
-      <ul className='list'>
+      <ul className="list">
         {todos.map((todo, index) => (
           <ListItem
             key={index}
@@ -53,7 +53,7 @@ function App() {
         ))}
       </ul>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

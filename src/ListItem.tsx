@@ -1,5 +1,5 @@
-import { FC, ReactNode } from 'react';
-import './ListItem.css'
+import { FC, ReactNode } from "react";
+import "./ListItem.css";
 
 interface ListItemProps extends React.HTMLAttributes<HTMLLIElement> {
   children: ReactNode;
@@ -13,7 +13,7 @@ const ListItem: FC<ListItemProps> = ({ children, isCompleted, ...props }) => (
   >
     <label>
       <input type="checkbox" />
-      <span className='list-item__label'>{children}</span>
+      <span className="list-item__label">{children}</span>
     </label>
   </li>
 );

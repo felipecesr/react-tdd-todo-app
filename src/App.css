@@ -1,47 +1,47 @@
 .wrapper {
-  margin:4rem auto;
-	padding:2rem 3rem 3rem;
-	max-width:600px;
-	background:#FF6666;
-	color:#FFF;
-	box-shadow:-20px -20px 0px 0px rgba(100,100,100,.1);
+  margin: 4rem auto;
+  padding: 2rem 3rem 3rem;
+  max-width: 600px;
+  background: #ff6666;
+  color: #fff;
+  box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.1);
 }
 
 .heading {
-  font-weight:normal;
-  font-size:2.6rem;
-  letter-spacing:0.05em;
-  border-bottom:1px solid rgba(255,255,255,.3); 
+  font-weight: normal;
+  font-size: 2.6rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .input {
-  flex-grow:1;
-	border:none;
-	background:#f7f1f1;
-	padding:0 1.5em;
-	font-size:initial;
+  flex-grow: 1;
+  border: none;
+  background: #f7f1f1;
+  padding: 0 1.5em;
+  font-size: initial;
 }
 
 .button {
-  padding:0 1.3rem;
-	border:none;
-	background:#FF6666;
-	color:white;
-	text-transform:uppercase;
-	font-weight:bold;
-	border:1px solid rgba(255,255,255,.3);
-	margin-left:5px;
-	cursor:pointer;
-	transition:background .2s ease-out;
+  padding: 0 1.3rem;
+  border: none;
+  background: #ff6666;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-out;
 }
 
 .button:hover {
-	background:#FF5E5E;
+  background: #ff5e5e;
 }
 
-.input, 
+.input,
 .button {
-	height:3rem;
+  height: 3rem;
 }
 
 .list {
