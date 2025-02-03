@@ -41,7 +41,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm test && npm run lint && npm run build
+        run: npm test && npm run lint && npm run build --base=/${{ github.event.repository.name }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
