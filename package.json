@@ -9,7 +9,8 @@
     "lint": "eslint . && prettier --list-different .",
     "format": "eslint --fix . && prettier --log-level warn --write .",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "prepare": "husky"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -30,6 +31,7 @@
     "eslint-plugin-testing-library": "^7.1.1",
     "globals": "^15.14.0",
     "happy-dom": "^16.8.1",
+    "husky": "^9.1.7",
     "prettier": "^3.4.2",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.18.2",
