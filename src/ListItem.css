@@ -5,6 +5,18 @@
   justify-content: space-between;
   align-items: center;
   background: rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.list-item input {
+  cursor: pointer;
+  appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
 }
 
 .list-item__label {
@@ -12,11 +24,11 @@
   transition: opacity 0.2s linear;
 }
 
-.list-item--done .list-item__label {
+.list-item input:checked + .list-item__label {
   opacity: 0.6;
 }
 
-.list-item--done .list-item__label::before {
+.list-item input:checked + .list-item__label::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -26,10 +38,6 @@
   height: 1px;
   background: #fff;
   animation: strikeitem 0.3s ease-out 0s forwards;
-}
-
-.list-item input {
-  appearance: none;
 }
 
 @keyframes strikeitem {
